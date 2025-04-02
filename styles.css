@@ -1,0 +1,439 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x:hidden ;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("/fonts/Satoshi-Variable.ttf") format("truetype");
+    font-weight: 100 900;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "ClashGrotesk";
+    src: url("/fonts/ClashGrotesk-Variable.ttf") format("truetype");
+    font-weight: 100 900;
+    font-display: swap;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "ClashGrotesk", sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  .top-bar{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    font-family: "Satoshi";
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.875rem;
+    width: 100%;
+    padding: 0px 1rem;
+    text-align: center;
+    gap: 0.25rem;
+    
+    color: rgb(255, 255, 255);
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: radial-gradient(29.05% 42.59% at 50% -5.56%, rgb(100, 25, 255) 0%, rgb(0, 0, 0) 100%);
+    
+    backdrop-filter: blur(10px);
+
+}
+.navbar img{
+    height: 100px;
+    width: auto;
+
+}
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px); 
+}
+.navlinks li a{
+    font-size:22px;
+}
+
+ul{
+    margin-left: 80px;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.ul-div a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.authlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .authlinks ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .authlinks ul li {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .authlinks ul li a {
+    display: inline-block;
+    padding: 5px 20px;
+    box-sizing: border-box; 
+    width: 120px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  
+  .authlinks ul li#Login a {
+    background: linear-gradient(145deg, #c0c0c0, #9c9c9c);
+    color: #000;
+    
+   
+    position: relative;
+  }
+  
+  
+ 
+  .authlinks ul li#Signup a {
+    background: black;
+    color: white;
+    border: 2px solid white;
+  }
+
+.logo{
+    background: linear-gradient(90deg, #b9004a, #e0035b, #ff91bd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "ClashGrotesk", sans-serif;
+
+    font-size: 2.5rem;
+    letter-spacing: -0.4px;
+
+}
+.hero{
+    height: 100vh; 
+    width: 100vw; 
+
+}.Hero-flex {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 600px;
+    margin-left: 50px;
+}
+
+.highlight1{
+    font-family: "ClashGrotesk", sans-serif;
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: -0.4px;
+    font-weight: 540;
+    margin: 10px 0;
+}
+.highlight2{
+    background: linear-gradient(90deg, #b9004a, #e0035b, #ff91bd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "ClashGrotesk", sans-serif;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: -0.4px;
+    font-weight: 540;
+    margin: 10px 0;
+}
+.highlight3{
+    
+    font-family: "ClashGrotesk", sans-serif;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: -0.4px;
+    font-weight: 540;
+    margin: 10px 0;
+}
+.hero-content p {
+    font-weight: 540;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 20px; 
+}
+
+
+.cta-button {
+    background: linear-gradient(90deg, #d000ff, #ff00a6);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: linear-gradient(90deg, #9505b5, #cf0087);
+}
+
+
+.spline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%; 
+}
+.about {
+    padding: 80px 20px;
+    background: #000000;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services {
+    padding: 80px 20px;
+    background: #000000;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1.1rem;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+
+.Ourproducts{
+    height: 110vh;
+    width: 100%;
+}
+.Ourproducts h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.logo-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: #000000; 
+    padding: 10px 0;
+}
+
+
+.logo-track {
+    display: flex;
+    gap: 90px; 
+    animation: scroll 8s linear infinite;
+    width: max-content;
+}
+
+
+.logo-track img {
+    height: 100px; 
+    object-fit: contain;
+}
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.spline-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  
+
+}
+.applevision{
+    width: 90vw;
+    margin: 10px 50px;
+    height: 30vh;
+    margin-left: 40px;
+    border-radius: 50px;   
+}
+
+.glasscontent{
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+.highlighted{
+    background: linear-gradient(90deg, #6d00a8, #ec70a2, #ff91bd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "ClashGrotesk", sans-serif;
+    font-size: 30px;
+    line-height: 4rem;
+    letter-spacing: -0.4px;
+    font-weight: 540;
+    margin: 10px 0;
+}
+.applevision{
+    width: 90vw;
+    margin: 10px 50px;
+    height: 30vh;
+    margin-left: 40px;
+    border-radius: 50px;   
+}
+.speaker{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.speaker img{
+    height: 50%;
+}
+
+.Technology{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.Technology .content{
+    width: 51vw;
+    text-align: justify;
+}
+.Technology .content p{
+    font-family: "Satoshi";
+    margin-left: 30px;
+    font-size: 30px;
+
+
+}
+
+.Technology video{
+    border-radius: 30px;
+    height: 350px;
+    margin-right: 10px;
+}
+.ContactUs{
+    height: 75vh;
+    background-color: white;
+    margin-top: 40px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.contactImg img{
+    margin-right: auto;
+    border-radius: 30px;
+
+}
+.contact-content{
+    margin-left: 30px;
+   
+}
+.contact-content h1{
+    font-size: 40px;
+    margin-top: 20px;
+
+    
+}
+.contact-content span{
+    font-size: 20px;
+    margin-top: 20px;
+
+
+}
+
+.ourlocation h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px auto;
+}
+.ourlocation iframe{
+    border-radius: 30px;
+}
